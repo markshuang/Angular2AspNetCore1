@@ -4,14 +4,16 @@
     "noEmitOnError": true,
     "removeComments": false,
     "sourceMap": true,
-    "target": "es6",
+    "target": "es5",
     "module": "commonjs",
+    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "outDir": "./wwwroot/appScripts/"
   },
   "exclude": [
     "node_modules",
-    "wwwroot"
+    "wwwroot",
+    "typings"
   ]
 }

@@ -1,0 +1,37 @@
+﻿{
+  "Framework": "jasmine",
+  "Compile": {
+    "Mode": "External",
+    "Extensions": [ ".ts" ],
+    "ExtensionsWithNoOutput": [ ".d.ts" ]
+  },
+  "EnableTracing": true,
+  "References": [
+    {
+      "Includes": [
+
+        "*/Angular2Scripts/*.ts",
+        "*/typings/main.d.ts"
+
+      ],
+      "Excludes": [ "*/Angular2Scripts/*.d.ts" ]
+    }
+  ],
+  "Tests": [
+    { "Path": "Testscripts" },
+    {
+     
+      "Includes": [ "testscripts/*.js" ]
+    },
+    {
+    
+      "Excludes": [
+        "node_modules",
+        "typings",
+        "wwwroot/js",
+        "wwwroot/lib",
+        "TestScripts/*.d.ts"
+      ]
+    }
+  ]
+}

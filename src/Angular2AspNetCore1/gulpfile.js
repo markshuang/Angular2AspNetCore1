@@ -55,11 +55,11 @@ gulp.task('moveToLibs', function (done) {
       'node_modules/jquery/dist/jquery.*js',
       'node_modules/bootstrap/dist/js/bootstrap*.js',
       'node_modules/rxjs/bundles/Rx.js'
-    ]).pipe(gulp.dest('./wwwroot/libs/'));
+    ]).pipe(gulp.dest('./wwwroot/lib/'));
 
     gulp.src([
       'node_modules/bootstrap/dist/css/bootstrap.css'
-    ]).pipe(gulp.dest('./wwwroot/libs/css'));
+    ]).pipe(gulp.dest('./wwwroot/lib/css'));
 });
 
 gulp.task("min", ["min:js", "min:css"]);
